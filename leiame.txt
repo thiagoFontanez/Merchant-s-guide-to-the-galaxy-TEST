@@ -1,0 +1,56 @@
+
+Para iniciar voce ira precisar dos seguintes intens abaixo
+---------------------------------------------------------------
+
+- Maven
+- Projeto "MerchantsGuide"
+- Ter um aqruivo input.txt
+
+---------------------------------------------------------------
+----------------  Iniciando o projeto  ------------------------
+---------------------------------------------------------------
+Step:1
+
+primeiramente crie um arquivo input.txt, na pasta MerchantsGuide
+contem um exemplo do arquivo.
+voce pode utilizar o arquivo de exemplo para executar o projeto.
+
+
+Step:2
+Descompacte o projeto MerchantsGuide.targz , e acesse a pasta MerchantsGuide
+Execute o comando abaixo:
+
+-> mvn clean package 
+
+Step:3
+acesse a pasta target, " MerchantsGuide > target ", dentro da pasta verifique se existe
+um arquivo com o nome "MerchantsGuide-0.0.1-SNAPSHOT.jar"
+
+	-> se sim , abra seu terminal no local do arquivo "MerchantsGuide-0.0.1-SNAPSHOT.jar"
+		-> execute o seguinte comando:
+		-> java -Dpath=Local/do/arquivo/input.txt -jar MerchantsGuide-0.0.1-SNAPSHOT.jar
+	exemplo -> java -Dpath=/home/thiagograciani/eclipse-workspace/MerchantsGuide/input.txt -jar MerchantsGuide-0.0.1-SNAPSHOT.jar
+
+Obs -> é de extrema importancia incluir corretamente o local do arquivo para que funcione o programa;
+
+	-> se não, retorne ao step:2 e efetue novamente o procedimento;
+
+-----------------------------------------------------------------------
+Informações adicionais.
+------------------------------------------------------------------------
+
+Foi incluido teste unitarios para manter a integridade dos methodos;
+	-> teste de verificação da repetição dos algarismos ROMANOS, nao podendo se remetir mais que 4x na mesma sequencia:
+	-> teste de verificação da repetição dos algarismos ROMANOS D, L e V , nao podem repetir nenhuma vez;
+	-> teste de verificação das informações do arquivo de entrada;
+	-> teste para verificar tradução dos algarismo romano para arabicos "numerais".
+
+
+
+
+
+
+ 
+
+
+
